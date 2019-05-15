@@ -24,6 +24,7 @@ let dataSorted;
 
 const showPokemon = (data) =>{
 
+
 /*For para imprimir las cards de acuerdo a la data recibida
 para mostrar los pokemones en su totalidad,
 por filtro y por orden*/
@@ -148,6 +149,7 @@ showPokemones.innerHTML = cardPokemon;
 
 }
 /*llamar a la funcion mostrar pokemones al inicio de la pagina*/
+
 showPokemon(data);
 
 
@@ -158,7 +160,7 @@ filterEgg.selectedIndex =0;
 orderData.selectedIndex = 0;
 //vaciando la variable que imprime las cards
 cardPokemon= '';
-//capturando la condicion por la que se hara el filtro
+//capturando la condicion por la que se hara el filtro ....todas las opciones del select fiteltype
 condition = filterType.options[filterType.selectedIndex].value;
 
 //condicionando que no tome el primer valor del select
@@ -258,7 +260,7 @@ if (eventOrder === 2){
 
     dataSorted = dataEggs;
 } 
-//de acuerdo al evento accionado se envia la data correspondiente
+//de acuerdo al evento accionado en html se envia data la data correspondiente  a data js
 //y se ordena de acuerdo al nombre o numero de pokemon
 if (sortOrderSelect === "A-Z"){
 dataSorted = window.sortData(dataSorted,"name","A-Z");

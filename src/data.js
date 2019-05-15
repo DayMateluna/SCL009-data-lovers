@@ -72,9 +72,9 @@ else if (sortOrder === "Z-A"){
 /* Funcion de calculo de porcentaje de pokemones de acuerdo al 
 tipo y al huevo, recibe la data filtrada y la data que contiene todos los pokemones
 retrona el porcentaje de acuerdo al tamano de la data filtrada*/
-const computeStats = (dataFilter, data)=> {
+const computeStats = (filterData, data)=> {
 
-return(Math.round((dataFilter.length*100)/data.length));
+return(Math.round((filterData.length*100)/data.length));
 
 
 }
